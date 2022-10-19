@@ -1,0 +1,9 @@
+.searchBar {
+    width: 30%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.searchBar-input {
+    width: 100%;
+}
