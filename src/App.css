@@ -30,12 +30,13 @@
 h1{
   margin-top: 30px;
 }
-/* .container-main{
+.container-main{
   display: flex;
   justify-content:center;
   text-align: center;
   align-items: center;
-} */
+  text-decoration: none;
+}
 
 @keyframes App-logo-spin {
   from {
@@ -44,4 +45,28 @@ h1{
   to {
     transform: rotate(360deg);
   }
+}
+
+.navbar-row-line{
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.navbar-row-line ul{
+  width: 100%;
+  flex-direction: row;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+.navbar-row-line li{
+  margin:20px;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
 }
