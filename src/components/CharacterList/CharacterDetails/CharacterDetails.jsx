@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 const CharacterDetails = () => {
   //* save data fetched in a state
@@ -8,17 +8,7 @@ const CharacterDetails = () => {
   const { name, location, origin, gender, image, status, species } = character;
 
   const { id } = useParams();
-//   let [fetchedData, updateFetchedData] = useState([]);
-//   let { name, location, origin, gender, image, status, species } = fetchedData;
 
-//   let api = `https://rickandmortyapi.com/api/character/${id}`;
-
-//   useEffect(() => {
-//     (async function () {
-//       let data = await fetch(api).then((res) => res.json());
-//       updateFetchedData(data);
-//     })();
-//   }, [api]);
   //* fetch Api endpoint using axios.get
   const getCharacters = async () => {
     let data = await axios
@@ -32,7 +22,10 @@ const CharacterDetails = () => {
   }, [id]);
   return (
     <div>
+      <div>
+<Link to="/characters-list">Back</Link>
       <h1>Character Details</h1>
+      </div>
      <div className="card m-2">
         <img
           className="card-img-top"

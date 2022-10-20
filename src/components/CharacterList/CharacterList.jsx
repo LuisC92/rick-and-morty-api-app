@@ -55,8 +55,6 @@ const CharacterList = () => {
       //* 1st step use the button to fetch data on Click
       <button onClick={() => getCharacters()}>Fetch Characters</button> 
       */}
-      <br />
-      <br />
       <SearchBar handleChange={handleChange} searchValue={searchValue} />
       <div className="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 justify-content-center mt-5 mb-5">
         <AddForm handleSubmit={handleSubmit}/>

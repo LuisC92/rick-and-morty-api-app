@@ -1,45 +1,6 @@
 import React, { useState } from "react";
 
 const AddForm = ({ handleSubmit }) => {
-  //   const [addCharacter, setAddCharacter] = useState({});
-  //   const handleNewCharacter = (event) => {
-  //     setAddCharacter({
-  //       [event.target.name]: event.target.value,
-  //       ...addCharacter,
-  //     });
-  //     console.log(addCharacter);
-  //   };
-  //   return (
-  //     <div>
-  //       <h3>Form to add new Character</h3>
-  //       <form onSubmit={(event) => handleSubmit(event, addCharacter)}>
-  //         <label htmlFor="name">Name</label>
-  //         <input
-  //           type="text"
-  //           name="name"
-  //           placeholder="Name"
-  //           onChange={handleNewCharacter}
-  //         />
-  //         <label for="formGroupExampleInput">Image</label>
-  //         {/* <input type="text" name="image" placeholder="Image src" onChange={handleNewCharacter} /> */}
-  //         <input
-  //           name="image"
-  //           type="text"
-  //           placeholder="image"
-  //           onChange={handleNewCharacter}
-  //         />
-  //         <label htmlFor="status">Status</label>
-  //         <input
-  //           type="text"
-  //           name="status"
-  //           placeholder="Status"
-  //           onChange={handleNewCharacter}
-  //         />
-  //         <button type="submit">Add Character</button>
-  //       </form>
-  //     </div>
-  //   );
-  // };
   const [addCharacter, setAddCharacter] = useState({
     name: "",
     status: "",
@@ -55,8 +16,8 @@ const AddForm = ({ handleSubmit }) => {
   return (
     <div>
       <form onSubmit={(e) => handleSubmit(e, addCharacter)}>
-        <div class="form-group">
-          <label for="formGroupExampleInput">Name</label>
+        <div className="form-group">
+          <label htmlFor="name">Name</label>
           <input
             name="name"
             id="name"
@@ -67,8 +28,8 @@ const AddForm = ({ handleSubmit }) => {
           <br />
         </div>
 
-        <div class="form-group">
-          <label for="formGroupExampleInput">Status</label>
+        <div className="form-group">
+          <label htmlFor="status">Status</label>
           <input
             name="status"
             id="status"
@@ -79,8 +40,8 @@ const AddForm = ({ handleSubmit }) => {
           <br />
         </div>
 
-        <div class="form-group">
-          <label for="formGroupExampleInput">Species</label>
+        <div className="form-group">
+          <label htmlFor="species">Species</label>
           <input
             name="species"
             id="species"
@@ -90,8 +51,8 @@ const AddForm = ({ handleSubmit }) => {
           />
           <br />
         </div>
-        <div class="form-group">
-          <label for="formGroupExampleInput">Image</label>
+        <div className="form-group">
+          <label htmlFor="image">Image</label>
           <input
             name="image"
             id="image"

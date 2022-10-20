@@ -48,7 +48,7 @@ h1{
 }
 
 .navbar-row-line{
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content:center;
@@ -69,4 +69,18 @@ h1{
   justify-content:center;
   align-items:center;
   text-align:center;
+}
+.card a:link {
+  text-decoration: none;
+  color: #000;
+}
+.navbar-nav a:link {
+  text-decoration: none;
+}
+.navbar-nav a {
+  color: #fff;
+}
+
+.form-group input{
+  width: 100%;
 }
